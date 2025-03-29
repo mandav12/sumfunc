@@ -8,6 +8,7 @@
 #' @importFrom dplyr group_by summarise
 #' @importFrom rlang enquo
 #' @importFrom magrittr %>%
+#' @importFrom testthat
 #' @examples summarystats(mtcars, rlang::exprs(cyl), "mpg")
 summarystats <- function(data, by, var) {
   # Capture the column names as symbols
